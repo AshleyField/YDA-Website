@@ -1,6 +1,7 @@
 //Main Style File
 
 @import "../node_modules/bootstrap/scss/functions";
+@import 'modules/base';
 @import 'modules/custom';
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -36,4 +37,5 @@
 // @import "../node_modules/bootstrap/scss/carousel";
 // @import "../node_modules/bootstrap/scss/utilities";
 // @import "../node_modules/bootstrap/scss/print";
-@import 'modules/base';
+@import 'modules/navigation';
+@import 'modules/home-hero';
