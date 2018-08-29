@@ -19,3 +19,16 @@ Once changed files have been added you can use `git commit -m "MESSAGE"`
 When applicable push the repositry to GitHub using `git push`
 
 To update your files with pushed files use the command `git pull`
+
+
+###### How to create a branch
+
+1. Type `git branch <branch name>`
+2. **Always checkout to branch using `git checkout <branch name>`**
+3. Send branch to GitHub using `git -u origin <branch name>`
+
+###### To merge the branch back to the master branch
+
+1. Checkout to master branch using `git checkout master`
+2. Add branch using `git merge <branch name>`
+3. Push the merged data to GitHub using `git push`
