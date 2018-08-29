@@ -1,0 +1,124 @@
+//Home Page Hero
+
+#staff{
+
+
+		
+		.hero{
+			background-color:$ydaPink;
+			background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+	  		background-repeat: no-repeat;
+	  		background-position: center;
+	  		background-size:cover;
+  			padding-top: 1.5em;
+			height: 55vh;
+			position:relative; 
+
+
+			&:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: rgba($ydaPink, 0.8);
+			// z-index: 5;
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			}
+
+
+
+
+  			h1{
+
+			font-family: 'Pacifico', cursive;
+			text-transform: lowercase;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 30px rgba(0,0,0,0.9);
+			margin-bottom:0.7em;
+			font-size: 2em;
+			z-index: 100;
+			position: relative;
+
+
+  			}
+
+  			p{
+			text-align: center;
+			font-size: 0.8em;
+			padding-right: 0.5em;
+			padding-left:0.5em;
+			position: relative;
+
+			}
+
+			.photo{
+			height:150px;
+			width:150px;
+			border-radius: 50%;
+			margin:0 auto;
+			margin-bottom: 0.5em;
+			position: relative;
+			
+
+				img{
+					display:block;
+					height:150px;
+					width:150px;
+					border-radius: 50%;
+					background-image: url();
+					background-size:contain;
+				}	
+
+			}
+
+		}	
+
+
+	}
+
+
+@media only screen and (min-width : 60em) {
+		
+	#staff{	
+
+
+		.hero{
+
+			height: 50vh; 
+	  		padding-top: 4em;
+
+	  		h1{
+				font-size: 2.5em;
+	  		}
+			
+			p{
+				font-size: 1em;
+			}
+
+			.photo{
+				height:175px;
+				width:175px;
+				margin-bottom: 1em;
+
+				img{
+					height:175px;
+					width:175px;
+				}
+
+			}
+		}
+
+	}	
+
+
+
+}
+
+
+
+
+
+
