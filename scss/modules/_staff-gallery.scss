@@ -1,0 +1,60 @@
+.staff-work {
+    @include make-row() &-tile {
+        width: 200px;
+        height: 200px;
+        border: 1px white solid;
+        margin: 0;
+        @include make-col(6);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.staff-work div:hover {
+    webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.staff-work {
+    &-tile {
+        .tile-title {
+        	z-index:2;
+            opacity: 1;
+            transition: all 350ms ease-in-out;
+        }
+    }
+}
+
+.tile-title>span:hover {
+	opacity: 1;
+}
+
+@media only screen and (min-width: 40em) {
+    .staff-work {
+        @include make-row() &>.staff-work-tile {
+            margin: 0;
+            min-width: 200px;
+            min-height: 200px;
+            box-sizing: border-box;
+            @include make-col(3)
+        }
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .staff-work {
+        @include make-row() &>.staff-work-tile {
+            min-height: 200px;
+            @include make-col(3);
+        }
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    .staff-work {
+        @include make-row() &>.staff-work-tile {
+            min-height: 200px;
+            @include make-col(2);
+        }
+    }
+}
