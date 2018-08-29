@@ -21,6 +21,8 @@ When applicable push the repositry to GitHub using `git push`
 To update your files with pushed files use the command `git pull`
 
 
+# Branches
+
 ###### How to create a branch
 
 1. Type `git branch <branch name>`
