@@ -1,5 +1,6 @@
 //Main Style File
 
+
 @import "../node_modules/bootstrap/scss/functions";
 @import 'modules/base';
 @import 'modules/custom';
@@ -39,3 +40,5 @@
 // @import "../node_modules/bootstrap/scss/print";
 @import 'modules/navigation';
 @import 'modules/home-hero';
+@import 'modules/bio';
+

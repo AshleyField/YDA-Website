@@ -1,2 +1,19 @@
 //Custom CSS
 $primary: $ydaPink;
+
+.staff-bio {
+
+	h1{
+	  font-style: italic;
+	  text-transform: low
+	}
+
+	p:nth-child(2) {
+	  font-style: italic;
+		
+	  color: $ydaGrey;
+
+	  opacity: 0.5;
+	  
+	}
+}
