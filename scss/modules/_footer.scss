@@ -46,6 +46,10 @@ footer {
 .footer-row {
 	border-bottom: 1px $ydaPink solid;
 	padding: 1em 0;
+
+	&:last-child {
+		border: none;
+	}
 }
 
 .footer-links {
