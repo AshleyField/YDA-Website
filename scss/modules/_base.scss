@@ -39,3 +39,12 @@ $bodyLineHeight: 2em;
 // Spacing
 
 $sectionPadding: 6em 3em;
+
+// Highlighting
+
+::selection {
+  background: $ydaPink; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $ydaPink; /* Gecko Browsers */
+}
