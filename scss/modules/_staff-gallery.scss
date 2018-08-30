@@ -1,7 +1,5 @@
 .staff-work {
     @include make-row() &-tile {
-        max-width: 200px;
-        max-height: 200px;
         border: 1px white solid;
         margin: 0;
         @include make-col(6);
@@ -17,6 +15,7 @@
     }
 }
 
+
 .staff-work div:hover>.tile-title>span {
     opacity: 1;
 }
@@ -25,6 +24,13 @@
 .staff-work {
     &-tile {
         position: relative;
+
+        &:before {
+            content: '';
+            padding-top: 100%;
+            height: 0;
+            width: 100%;
+        }
         .staff-work-image {
             width: 100%;
             padding-top: 70%;
@@ -76,9 +82,9 @@
 }
 
 @media only screen and (min-width: 60em) {
-    .staff-work-container {
-        padding: 5em;
-    }
+    // .staff-work-container {
+    //     padding: 5em;
+    // }
 }
 
 @media only screen and (min-width: 80em) {}
