@@ -8,19 +8,6 @@
     }
 }
 
-.staff-work div:hover {
-    .staff-work-image {
-        webkit-filter: blur(2px);
-        filter: blur(2px);
-    }
-}
-
-
-.staff-work div:hover>.tile-title>span {
-    opacity: 1;
-}
-
-
 .staff-work {
     &-tile {
         position: relative;
@@ -82,9 +69,21 @@
 }
 
 @media only screen and (min-width: 60em) {
-    // .staff-work-container {
-    //     padding: 5em;
-    // }
+    .staff-work-container {
+        padding: 5em;
+    }
+
+    .staff-work div:hover {
+        .staff-work-image {
+            webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+    }
+
+
+    .staff-work div:hover>.tile-title>span {
+        opacity: 1;
+    }
 }
 
 @media only screen and (min-width: 80em) {}
