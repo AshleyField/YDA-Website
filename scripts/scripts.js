@@ -39,7 +39,7 @@ $(function() {
             dataType: 'jsonp',
             success: function(res) {
                 _(res.projects).each(function(project) {
-                    $('<div class="staff-work-tile" style="background-image: url('+ project.covers.original +');">' + '<div class="tile-title"> <span>' + project.name + '</span></div></div>').appendTo('.staff-work');
+                    $('<div class="staff-work-tile"><div class="staff-work-image" style="background-image: url('+ project.covers.original +');"> </div>' + '<div class="tile-title"> <span>' + project.name + '</span></div></div>').appendTo('.staff-work');
                 });
             }
         });
