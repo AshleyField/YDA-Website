@@ -76,7 +76,7 @@
 		</div>
 		<div class="staff-profiles">
 			<div class="l_column_container">
-
+<!-- 
 				<div class="l_column_container_item column_item">
 					<div class="icon">
 						<i class="fab fa-app-store"></i>
@@ -120,7 +120,7 @@
 						</div>
 					</div>
 					
-				</div>
+				</div> -->
 				
 			</div>
 		</div>
@@ -187,8 +187,28 @@
 		</footer>
 	</div>
 
+	<script id="staffProfileTemplate" type="text/template7">
+		<div class="l_column_container_item column_item">
+			<div class="icon">
+				<img src="{{user.images[276]}}" alt="">
+			</div>
+			
+			<div class="l_column_container_item_inner">
+				<h1>{{user.display_name}}</h1>
+				<p>{{user.occupation}}</p>
+				<p>{{user.sections[0]}}</p>
+				<div class="button_1">
+					<a href="staff.html?id={{user.id}}">View Staff</a>
+				</div>
+			</div>
+			
+		</div>
+	</script>
+
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/underscore.js"></script>
+	<script src="scripts/template7.js"></script>
 	<script src="scripts/scripts.js"></script>
 
 </body>

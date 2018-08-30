@@ -26,12 +26,35 @@ $(function() {
     });
 
     //Staff Gallery
-    let key = 'LTLUQQXSYWEe5kN6NqJ1DgcVydeNXBFq';
-
+    let key = 'IuFvFQ4A5CUDOm6XyKKvzFOccCApTNNZ';
 
     let urlProjects = 'https://api.behance.net/v2/users/heycheese/projects?client_id=' + key;
 
     console.log(urlProjects);
+
+    var users = ['andrewcouldwell', 'AlexSeagull', 'juliettewang']
+
+    var projectHTML = $('#staffProfileTemplate').text();
+    var projectTemplate = Template7(projectHTML).compile();
+
+    if ($('#index').length > 0) {
+
+        _(users).each(function(username){
+            var profileUrl = 'https://api.behance.net/v2/users/'+ username +'/?client_id=' + key;
+
+            $.ajax({
+                url: profileUrl,
+                dataType: 'jsonp',
+                success: function(res){
+
+                    console.log(res);
+
+                    var output = projectTemplate(res);
+                    $('.l_column_container').append(output);
+                }
+            })
+        });
+    }
 
     if ($('#staff').length > 0) {
         $.ajax({
