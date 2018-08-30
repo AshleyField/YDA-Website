@@ -72,3 +72,64 @@
 		}
 	}
 }
+
+@media only screen and (min-width : 40em) {
+
+	#index {
+		.hero-content {
+
+			&-text {
+
+				h1 {
+					font-size: 3em;
+				}
+
+				h2 {
+					font-size: 1.1em;
+					margin-top: 2em;
+				}
+			}
+
+			&-button {
+
+				.btn-primary {
+					width: 15em;
+					line-height: 2em;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}	
+
+}
+
+@media only screen and (min-width : 80em) {
+
+	#index {
+		.hero-content {
+
+			&-text {
+
+				h1 {
+					font-size: 5em;
+				}
+
+				h2 {
+					font-size: 1.2em;
+					margin-top: 2em;
+				}
+			}
+
+			&-button {
+				margin-top: 5em;
+
+				.btn-primary {
+					width: 15em;
+					line-height: 2em;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}	
+
+}
