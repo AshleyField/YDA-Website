@@ -13,6 +13,8 @@ footer {
 		font-size: 1.25em;
 		text-align: center;
 		color: $ydaMint;
+		font-family: $secondaryFont;
+		letter-spacing: $displayLetterSpacing;
 	}
 
 	h2 {
@@ -22,6 +24,7 @@ footer {
 		padding: 0;
 		font-size: 1em;
 		text-align: center;
+		font-family: $primaryFont;
 	}
 }
 
@@ -40,6 +43,7 @@ footer {
 		color: #fff;
 		margin-top: 1em;
 		color: $ydaMint;
+		font-family: $primaryFont;
 	}
 }
 
@@ -61,6 +65,7 @@ footer {
 		color: #fff;
 
 		li {
+			font-family: $primaryFont;
 			margin-top: .25em;
 		}
 	}
@@ -174,6 +179,8 @@ footer {
 
 		.footer-page-links {
 			text-align: left;
+			font-family: $primaryFont;
+			line-height: $bodyLineHeight;
 		}
 	}
 
@@ -186,6 +193,13 @@ footer {
 		.social-row {
 			justify-content: flex-start;
 		}
+
+		p{
+			font-family: $primaryFont;
+			line-height: $bodyLineHeight;
+
+
+		}
 	}
 
 	.footer-signup {
@@ -193,6 +207,12 @@ footer {
 
 		h1, h2 {
 			text-align: left;
+		}
+
+		h2{
+			font-family: $primaryFont;
+			line-height: $bodyLineHeight;
+			
 		}
 
 		.signupbox {

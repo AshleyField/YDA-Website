@@ -41,16 +41,25 @@
 			font-size: 2em;
 			z-index: 100;
 			position: relative;
+			letter-spacing: $displayLetterSpacing;
 
 
   			}
 
   			p{
+  			font-family: $primaryFont;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 1em;
+			font-size: .9em;
+			line-height: $bodyLineHeight;
 			text-align: center;
 			font-size: 0.8em;
 			padding-right: 0.5em;
 			padding-left:0.5em;
 			position: relative;
+
 
 			}
 
