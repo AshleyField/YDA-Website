@@ -27,7 +27,7 @@ To update your files with pushed files use the command `git pull`
 
 1. Type `git branch <branch name>`
 2. **Always checkout to branch using `git checkout <branch name>`**
-3. Send branch to GitHub using `git -u origin <branch name>`
+3. Send branch to GitHub using `git push -u origin <branch name>`
 
 ###### To merge the branch back to the master branch
 
