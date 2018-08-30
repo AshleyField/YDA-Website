@@ -12,14 +12,22 @@
 		margin: 0 auto;
 		padding: 0;
 
-		p {
-			
-			font-family: $secondaryFont;
-			text-transform: uppercase;
-			border-bottom: 1px solid grey;
-			margin: 2em 1.5em;	
-			letter-spacing: $displayLetterSpacing;		 
+		h1 {
+			font-size: $displayFontSize;
+			letter-spacing: $displayLetterSpacing;
+			text-transform: $displayTexttransform;
+			margin-bottom: 1em;
+			text-align: center;
 		}
+
+		// p {
+			
+		// 	font-family: $secondaryFont;
+		// 	text-transform: uppercase;
+		// 	border-bottom: 1px solid grey;
+		// 	margin: 2em 1.5em;	
+		// 	letter-spacing: $displayLetterSpacing;		 
+		// }
 
 		
 		ul {

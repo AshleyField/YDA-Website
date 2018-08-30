@@ -25,6 +25,19 @@ $(function() {
         }
     });
 
+    //animation of hero home
+
+    var typed = new Typed('#finished', {
+        stringsElement: '#typing',
+        showCursor: false,
+        startDelay: 1000,
+        backDelay: 2000,
+        backSpeed:60,
+        typeSpeed:60,
+        loop: true,
+        loopCount: Infinity
+    });
+
     //Staff Gallery
     let key = 'IuFvFQ4A5CUDOm6XyKKvzFOccCApTNNZ';
 
