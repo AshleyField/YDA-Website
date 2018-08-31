@@ -80,4 +80,19 @@ $(function() {
             }
         });
     }
+
+    //Smooth Scrolling
+
+    $('[data-to]').on('click',function(e){
+        e.preventDefault();
+
+        var sTarget = $(this).data('to');
+        var targetOffsetTop = $(sTarget).offset().top - 100;
+
+        $('html,body').animate({scrollTop:targetOffsetTop}, 1000);
+
+    });
+
+
+
 });
