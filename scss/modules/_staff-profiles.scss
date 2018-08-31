@@ -126,6 +126,10 @@
 
 		.button_1 {
 			background-color: $ydaMint;
+
+			&:hover {
+				background-color: darken($ydaMint, 20%);
+			}
 		}
 	}
 }
@@ -136,7 +140,7 @@
 	text-transform: lowercase;
 	font-size: 1.2em;
 	width: 50%;
-	border-radius: 3px;
+	border-radius: 25px;
 	height: 3em;
 	margin: 0 auto;
 	justify-content: center;
