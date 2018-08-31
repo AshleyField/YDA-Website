@@ -6,19 +6,21 @@
 	
 	padding: $sectionPadding;
 
-	.container {
-	
-		width: 100%;
-		margin: 0 auto;
-		padding: 0;
-
-		h1 {
+			h1 {
 			font-size: $displayFontSize;
 			letter-spacing: $displayLetterSpacing;
 			text-transform: $displayTexttransform;
 			margin-bottom: 1em;
 			text-align: center;
 		}
+
+	.container {
+	
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+
+
 
 		// p {
 			
@@ -97,7 +99,7 @@
 			ul {	
 
 				li {
-					flex: 1 0 35%;
+					flex: 1 0 29%;
 				}
 
 			}
@@ -106,6 +108,19 @@
 
 
 @media only screen and (min-width: 80em) {
+
+	.clients{
+
+	}
+
+	.clients h1{
+		display:block;
+		margin: 0 auto;
+		width: 50%;
+		text-align: left;
+		padding-left: 0.25em;
+		padding-bottom: 0.5em;
+	}
 
 	  .clients .container{
 			
