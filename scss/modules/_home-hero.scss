@@ -40,13 +40,15 @@
 					text-align: center;
 					font-size: 2.5em;
 					color: #fff;
-					text-shadow: 0 0 30px rgba(0,0,0,0.9)
+					text-shadow: 0 0 30px rgba(0,0,0,0.9);
 				}
 
 				h2 {
 					font-family: $primaryFont;
 					font-weight: 300;
 					text-transform: uppercase;
+					color: #fff;
+					text-shadow: 0 0 10px rgba(0,0,0,1);
 					text-align: center;
 					margin-top: 1em;
 					font-size: .9em;
@@ -81,7 +83,7 @@
 			content: "";
 			width: 100%;
 			height: 100%;
-			background-color: rgba($ydaMintRGB, 0.8);
+			background-color: rgba($ydaMintRGB, 0.2);
 			z-index: 5;
 			display: block;
 			position: absolute;

@@ -54,23 +54,13 @@
 
 		</nav>
 		<div class="hero container-fluid">
-			<div class="row">
-				<div class="col-lg 12 content">
-					<div class="photo">
-						<img src="assets/images/staffpic.jpg" alt="">
-					</div>
-					<h1>Staff Name</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime maiores nostrum beatae.</p>
-			<!-- Photo in circle, name, and one quote -->
-				</div>
-			</div>	
 		</div>
 
 		<div class="blurb staff-bio">
 			<div class="container">
 				<h1>"I like graphic design"</h1>
-				<p>Graphic Design, Illustration, Film</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic harum, neque totam id eveniet! At nobis pariatur aperiam eligendi.</p>
+				<p class="fields-work">Graphic Design, Illustration, Film</p>
+				<p class="staff-bio-inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum hic harum, neque totam id eveniet! At nobis pariatur aperiam eligendi.</p>
 			</div>
 		</div>
 
@@ -137,8 +127,21 @@
 		</footer>
 	</div>
 
+	<script  id="staffHeroTemplate" type="text/template7">
+		<div class="row">
+			<div class="col-lg 12 content">
+				<div class="photo">
+					<img src="{{user.images[276]}}" alt="">
+				</div>
+				<h1>{{user.display_name}}</h1>
+				<p class="staff-hero-fields">{{user.fields}}</p>
+			</div>
+		</div>	
+	</script>
+
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 	<script src="scripts/underscore.js"></script>
 	<script src="scripts/template7.js"></script>
 	<script src="scripts/scripts.js"></script>
