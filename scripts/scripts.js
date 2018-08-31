@@ -52,6 +52,19 @@ $(function() {
 
     if ($('#index').length > 0) {
 
+        var referredParams = new URLSearchParams(window.location.search);
+
+        var isReffered = referredParams.get('referred')
+
+        if(isReffered == 'staff'){
+
+            let sTarget = $('.staff-profiles');
+            let targetOffsetTop = $(sTarget).offset().top - 100;
+
+            $('html,body').animate({scrollTop:targetOffsetTop}, 1000);
+
+        }
+
         _(users).each(function(username){
             var profileUrl = 'https://api.behance.net/v2/users/'+ username +'/?client_id=' + key;
 
@@ -86,12 +99,14 @@ $(function() {
     $('[data-to]').on('click',function(e){
         e.preventDefault();
 
-        var sTarget = $(this).data('to');
-        var targetOffsetTop = $(sTarget).offset().top - 100;
+        let sTarget = $(this).data('to');
+        let targetOffsetTop = $(sTarget).offset().top - 100;
 
         $('html,body').animate({scrollTop:targetOffsetTop}, 1000);
 
     });
+
+
 
 
 
